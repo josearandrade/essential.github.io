@@ -84,9 +84,9 @@ document.addEventListener('DOMContentLoaded', () => {
           // Serviços (modo claro)
           serviceCards.forEach((card, i) => {
             card.style.backgroundColor = i % 2 === 0 ? 'white' : 'white';
-            card.style.color = 'black';
+            card.style.color = '#814541';
           });
-          serviceTexts.forEach(el => el.style.color = 'black');
+          serviceTexts.forEach(el => el.style.color = '#814541');
         }
       }
 
