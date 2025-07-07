@@ -1,0 +1,321 @@
+/* --- Reset Básico e Estilos Globais --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif; /* Fonte padrão para textos */
+    background-color: #fff; /* Um cinza bem claro para o fundo */
+    color: #333;
+    line-height: 1.6;
+}
+
+.main-container {
+    max-width: 100%; /* Largura máxima da página */
+    margin: 0 auto; /* Centraliza a página na tela */
+    padding: 0; /* Espaçamento nas laterais */
+    background-color: #CEB1AD;
+}
+
+a {
+    color: #5a3e5c; /* Uma cor roxa para os links */
+    text-decoration: none;
+}
+
+/* --- Cabeçalho (Header) --- */
+.header {
+    display: flex; /* ATIVA O FLEXBOX! */
+    justify-content: space-between; /* Espaça os itens: logo na esquerda, nav/botão na direita */
+    align-items: center; /* Alinha todos os itens verticalmente no centro */
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    max-height: 120px; /* Controla o tamanho do logo */
+    margin-left: 18vw;
+}
+
+.logo-container {
+    display: flex; /* Permite que o logo e o título fiquem lado a lado */
+    align-items: center;
+}
+
+.logo-title {
+    max-height: 120px; /* Controla o tamanho do logo */
+    color: #814541;
+    font-size: 20px;
+}
+
+.logo-subtitle {
+    font-size: 14px; /* Tamanho menor para o subtítulo */
+    color: #814541; /* Cor do subtítulo */
+}
+
+.main-nav ul {
+    display: flex; /* Deixa os itens do menu um ao lado do outro */
+    list-style-type: none;
+    gap: 120px; /* Espaçamento entre os itens do menu */
+}
+
+.main-nav a {
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #814541;
+}
+
+.theme-switcher {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-right: 20px; /* Ajuste conforme necessário */
+}
+
+.theme-icon {
+  height: 24px;
+  width: 24px;
+}
+
+
+/* --- Seção Principal (Hero) --- */
+.hero-section { 
+    display: flex;
+    align-items: center;
+    padding:0 20vw;
+    gap: 40px; /* Espaço entre o texto e a imagem */
+    background-color: #814541;
+    color: #CEB1AD;
+}
+
+.hero-content {
+    flex: 1; /* Ocupa metade do espaço disponível */
+}
+
+.hero-title {
+    font-family: 'Prata', serif; /* Fonte elegante para o título principal */
+    font-size: 48px;
+    color: #CEB1AD;
+    margin-bottom: 15px;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #CEB1AD;
+    color: #814541;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 24px;
+    transition: background-color 0.3s;
+    margin: 0 auto;
+    display: block;
+}
+
+.btn:hover {
+    background-color: #532c29;
+}
+
+.hero-image-container {
+    flex: 1; /* Ocupa a outra metade do espaço */
+    text-align: center; /* Centraliza a imagem se o container for maior */
+}
+
+.hero-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* --- Seção Sobre Nós --- */
+.about-section {
+    padding: 60px 0;
+    text-align: center; /* Centraliza todo o conteúdo desta seção */
+    color: #814541;
+}
+
+.section-header {
+    margin-bottom: 40px;
+}
+
+.brand-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.section-subtitle {
+    font-family: 'Prata', serif;
+    font-size: 36px;
+    margin-top: 10px;
+}
+
+.about-content {
+    max-width: 700px; /* Limita a largura do texto para melhor leitura */
+    margin: 0 auto; /* Centraliza o bloco de texto */
+    text-align: left; /* Alinha o texto do parágrafo à esquerda */
+}
+
+.about-content h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.specialties-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.btn2 {
+    display: inline-block;
+    background-color: #814541;
+    color: #CEB1AD;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 24px;
+    transition: background-color 0.3s;
+    margin: 20px auto;
+    display: block;
+}
+
+.btn2:hover {
+    background-color: #9c817c;
+}
+
+/* --- Rodapé (Footer) --- */
+.footer-section {
+    padding: 40px 0;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    background-color: #814541;
+    color: #CEB1AD; /* ou white, dependendo do tema */
+}
+
+.footer-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #CEB1AD;
+}
+
+.contact-info address {
+    font-style: normal;
+    color: #CEB1AD;
+}
+
+
+.services-page-section {
+    background-color: #814541;
+    color: #CEB1AD;
+}
+
+.services-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.service-card {
+    width: 100vw; /* ocupa a largura total da tela */
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 0 20vw;
+    box-sizing: border-box;
+}
+
+.service-card:nth-child(odd) {
+    background-color: #814541;
+    color: #CEB1AD;
+}
+
+.service-card:nth-child(even) {
+    background-color: #CEB1AD;
+    color: #814541;
+    flex-direction: row-reverse;
+}
+
+.service-card:nth-child(even) .service-content,
+.service-card:nth-child(even) .service-content h3,
+.service-card:nth-child(even) .service-content p {
+    color: inherit;
+}
+
+.service-content h3,
+.service-content p {
+    color: inherit; /* herda a cor correta */
+}
+
+.service-image {
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+.service-content {
+    flex: 1;
+}
+
+.service-image-container {
+    flex: 1;
+    text-align: center;
+}
+
+.service-image {
+    max-width: 100%;
+    max-height: 700px; /* limite desejado */
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto; /* centraliza horizontalmente */
+    display: block;
+}
+
+.service-content {
+    flex: 1;
+    padding: 60px 0; /* desloca conteúdo, não o card em si */
+}
+
+.service-card:nth-child(odd) .service-content {
+    text-align: right;
+}
+
+.service-content h3 {
+    font-family: 'Prata', serif;
+    font-size: 36px;
+    color: #CEB1AD;
+    margin-bottom: 20px;
+}
+
+.service-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #CEB1AD;
+    font-weight: 400;
+}
+
+
+/* --- Design Responsivo para Celulares --- */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Empilha o logo e a navegação */
+        gap: 20px;
+    }
+
+    .hero-section {
+        flex-direction: column; /* Empilha a imagem e o texto */
+        text-align: center;
+    }
+
+}
+

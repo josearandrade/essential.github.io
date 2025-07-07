@@ -1,0 +1,20 @@
+/* vars.css */
+:root {
+    /* Colors from the new design */
+    --color-primary: #814541;       /* Dark Reddish-Brown */
+    --color-secondary: #ceb1ad;      /* Dusty Rose / Beige */
+    --color-background: #ceb1ad;   /* Main background */
+    --color-text-light: #ffffff;
+    --color-text-dark: #ceb1ad;
+    --color-footer-bg: #794343;     /* Darker tone for footer */
+
+    /* Fonts from the new design */
+    --font-family-primary: 'Quicksand', sans-serif;
+    --font-size-base: 16px;
+
+    /* Spacing */
+    --spacing-small: 8px;
+    --spacing-medium: 16px;
+    --spacing-large: 32px;
+    --spacing-xlarge: 64px;
+}
