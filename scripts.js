@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
             heroSubtitle && (heroSubtitle.style.color = '#CEB1AD');
           }
           button && (button.style.backgroundColor = '#CEB1AD');
-          button2 && (button2.style.color = '#814541');
+          button2 && (button2.style.color = '#CEB1AD');
           footer && footer.style.setProperty('color', '#CEB1AD', 'important');
 
           // Serviços (modo escuro)
